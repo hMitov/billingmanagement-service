@@ -14,13 +14,9 @@ allprojects {
 	apply plugin: 'org.springframework.boot'
 	apply plugin: 'io.spring.dependency-management'
 
-	group 'com.paymentsystem'
+	group 'com.billingmanagementservice'
 	version '0.0.1-SNAPSHOT'
 	java.sourceCompatibility(JavaVersion.VERSION_11)
-
-	task('hello').doLast {
-		println "I'm $project.name"
-	}
 
 	configurations {
 		compileOnly.extendsFrom annotationProcessor
