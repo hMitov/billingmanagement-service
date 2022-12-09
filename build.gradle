@@ -8,7 +8,7 @@ jar {
 	enabled = true
 }
 
-subprojects {
+allprojects {
 
 	apply plugin: 'java'
 	apply plugin: 'org.springframework.boot'

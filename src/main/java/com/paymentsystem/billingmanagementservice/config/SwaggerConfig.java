@@ -1,4 +1,4 @@
-package com.paymentsystem.rest.config;
+package com.paymentsystem.billingmanagementservice.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
 @PropertySource("classpath:swagger.properties")
-@ComponentScan(basePackages = "com.paymentsystem.rest.controller")
+@ComponentScan(basePackages = "com.rest.controller")
 @Configuration
 public class SwaggerConfig {
     private static final String SWAGGER_API_VERSION = "1.0";

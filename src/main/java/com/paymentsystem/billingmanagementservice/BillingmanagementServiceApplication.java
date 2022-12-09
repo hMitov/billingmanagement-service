@@ -1,16 +1,15 @@
-package com.paymentsystem.rest;
+package com.paymentsystem.billingmanagementservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @SpringBootApplication
-@ComponentScan({"com.paymentsystem.domain", "com.paymentsystem.domain.repository"})
 @EnableScheduling
 public class BillingmanagementServiceApplication {
 
