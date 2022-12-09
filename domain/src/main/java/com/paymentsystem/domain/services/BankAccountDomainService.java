@@ -94,12 +94,12 @@ public class BankAccountDomainService {
         transaction.setAmount(data.getAmount());
         transaction.setRecipientFirstName(data.getRecipientFirstName());
         transaction.setRecipientLastName(data.getRecipientLastName());
-        transaction.setStatus(Status.PENDING);
+        transaction.setStatus(data.getStatus());
 
         BankAccount loadedBankAccount = bankAccountRepository.findByIban(data.getSenderIban())
                 .orElseThrow(() -> new Exception("No such account"));
         loadedBankAccount.setAvailableAmount(loadedBankAccount.getAvailableAmount() - data.getAmount());
-        bankAccountRepository.save(loadedBankAccount);
+
 
         return domainAdapter.convertTransactionEntityToValue(transactionRepository.save(transaction));
 

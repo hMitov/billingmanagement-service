@@ -49,6 +49,7 @@ public class RestAdapter {
         VTransactionData vData = new VTransactionData();
 
         vData.setRecipientIban(data.getRecipientIban());
+        vData.setTransactionId(data.getTransactionId());
         vData.setSenderIban(data.getSenderIban());
         vData.setDateOfTransaction(data.getDateOfTransaction());
         vData.setAmount(data.getAmount());
