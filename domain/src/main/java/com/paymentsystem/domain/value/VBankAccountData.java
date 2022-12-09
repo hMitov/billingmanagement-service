@@ -1,8 +1,7 @@
 package com.paymentsystem.domain.value;
 
+import com.paymentsystem.domain.entity.Currency;
 import lombok.Data;
-
-import java.util.Currency;
 
 @Data
 public class VBankAccountData {

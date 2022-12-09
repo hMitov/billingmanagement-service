@@ -1,8 +1,7 @@
 package com.paymentsystem.rest.dto;
 
+import com.paymentsystem.domain.entity.Currency;
 import lombok.Data;
-
-import java.util.Currency;
 
 @Data
 public class BankAccountData {
